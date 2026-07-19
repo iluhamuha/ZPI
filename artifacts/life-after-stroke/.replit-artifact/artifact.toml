@@ -1,0 +1,20 @@
+kind = "web"
+previewPath = "/"
+title = "Жизнь после инсульта"
+version = "1.0.0"
+id = "artifacts/life-after-stroke"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23558
+
+[services.development]
+run = "pnpm --filter @workspace/life-after-stroke run dev"
+
+[services.production]
+run = ["node", "server.js"]
+
+[services.env]
+PORT = "23558"
