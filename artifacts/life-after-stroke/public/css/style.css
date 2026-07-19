@@ -381,80 +381,132 @@ img, svg {
   height: 100%;
 }
 
-/* About Page */
-.about-grid {
+/* About Page v2 */
+
+/* Hero: portrait + intro */
+.about-hero {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 4rem;
-  align-items: start;
+  grid-template-columns: 480px 1fr;
+  min-height: 520px;
+  border-bottom: 1px solid var(--divider);
 }
 
-.timeline {
-  margin-top: 3rem;
-  position: relative;
-  padding-left: 2rem;
+.about-portrait {
+  background-color: var(--bg-beige);
+  overflow: hidden;
 }
 
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background-color: var(--accent-sage);
-  opacity: 0.3;
+.about-portrait svg {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  display: block;
 }
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 3rem;
+.about-intro {
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -2.35rem;
-  top: 0.4rem;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: var(--accent-sage);
+.about-intro h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
-.timeline-year {
+.about-intro p {
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  max-width: 520px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Bio strips: alternating full-width sections */
+.bio-strips {
+  width: 100%;
+}
+
+.bio-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 420px;
+  border-bottom: 1px solid var(--divider);
+}
+
+.bio-strip--reverse .bio-photo { order: 2; }
+.bio-strip--reverse .bio-text  { order: 1; }
+
+.bio-photo {
+  background-color: var(--bg-beige);
+  overflow: hidden;
+}
+
+.bio-photo svg {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  display: block;
+}
+
+.bio-text {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-white);
+}
+
+.bio-text--alt {
+  background-color: var(--bg-beige);
+}
+
+.bio-year {
   font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
   color: var(--accent-sage);
-  margin-bottom: 0.5rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
 }
 
+.bio-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.bio-text p {
+  color: var(--text-muted);
+  max-width: 480px;
+  line-height: 1.85;
+}
+
+/* Diplomas */
 .diploma-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .diploma-item {
   cursor: pointer;
-  transition: transform var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .diploma-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(28, 26, 23, 0.1);
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.gallery-item {
-  cursor: pointer;
+.diploma-item svg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Lightbox */
@@ -684,12 +736,54 @@ img, svg {
     grid-template-columns: 1fr;
   }
   
-  .about-grid {
+  /* About hero */
+  .about-hero {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
-  
-  .gallery-grid {
+
+  .about-portrait svg {
+    min-height: 320px;
+  }
+
+  .about-intro {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .about-intro h1 {
+    font-size: 2rem;
+  }
+
+  .about-intro p {
+    max-width: none;
+  }
+
+  /* Bio strips */
+  .bio-strip {
     grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .bio-strip .bio-photo {
+    order: 0 !important;
+  }
+
+  .bio-strip .bio-text {
+    order: 1 !important;
+    padding: 2rem 1.25rem;
+  }
+
+  .bio-photo svg {
+    min-height: 260px;
+  }
+
+  .bio-text p {
+    max-width: none;
+  }
+
+  /* Diploma grid */
+  .diploma-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .section {
@@ -698,20 +792,6 @@ img, svg {
 
   .hero {
     padding: 4rem 1rem 3rem;
-  }
-
-  .timeline-item {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .timeline-photo {
-    width: 100%;
-    order: 1;
-  }
-
-  .timeline-body {
-    order: 0;
   }
 
   .course-card {

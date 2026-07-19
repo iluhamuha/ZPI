@@ -25,151 +25,181 @@
   </header>
 
   <main class="main-content">
-    <section class="section">
-      <div class="about-grid">
-        <div class="about-image">
-          <div class="placeholder-img" aria-label="фото">
-            <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" width="100%" height="400">
-              <rect width="300" height="400" fill="#E8E4DA"/>
-              <text x="150" y="210" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#999">Людмила Смирнова (фото)</text>
-            </svg>
-          </div>
+
+    <!-- Hero: portrait + intro -->
+    <div class="about-hero">
+      <div class="about-portrait">
+        <svg viewBox="0 0 480 600" xmlns="http://www.w3.org/2000/svg"
+             preserveAspectRatio="xMidYMid slice"
+             aria-label="Портрет Людмилы Смирновой (фото)">
+          <rect width="480" height="600" fill="#E8E4DA"/>
+          <text x="240" y="310" text-anchor="middle"
+                font-family="sans-serif" font-size="15" fill="#999">
+            Людмила Смирнова (фото)
+          </text>
+        </svg>
+      </div>
+      <div class="about-intro">
+        <h1 class="font-heading">Обо&nbsp;мне</h1>
+        <p>Здравствуйте. Меня зовут Людмила Смирнова. Я нейропсихолог, и моя главная задача — помочь людям вернуть контроль над своей жизнью после инсульта.</p>
+        <p>За двадцать лет практики я работала с сотнями семей. Каждая история уникальна, но одно остаётся неизменным: восстановление возможно — если рядом есть правильная поддержка.</p>
+        <p>Сейчас я веду онлайн-консультации и групповые программы из Праги. Расстояние больше не преграда.</p>
+      </div>
+    </div>
+
+    <!-- Biography: alternating strips -->
+    <div class="bio-strips">
+
+      <!-- 1985 — фото слева -->
+      <div class="bio-strip">
+        <div class="bio-photo" aria-label="фото 1985">
+          <svg viewBox="0 0 4 3" xmlns="http://www.w3.org/2000/svg"
+               preserveAspectRatio="xMidYMid slice">
+            <rect width="4" height="3" fill="#E8E4DA"/>
+            <text x="2" y="1.65" text-anchor="middle"
+                  font-family="sans-serif" font-size="0.28" fill="#999">фото 1985</text>
+          </svg>
         </div>
-
-        <div class="about-content content-block">
-          <h1 class="font-heading mb-4">Обо мне</h1>
-          <p>Здравствуйте. Меня зовут Людмила Смирнова. Я нейропсихолог, и моя главная задача — помочь людям вернуть контроль над своей жизнью после инсульта. Это долгий путь, но он не должен быть одиноким.</p>
-
-          <div class="timeline">
-
-            <div class="timeline-item">
-              <div class="timeline-body">
-                <div class="timeline-year">1985</div>
-                <p>Медицинское училище. Окончила с красным дипломом — это был первый шаг к пониманию, как работает человеческое тело и разум.</p>
-              </div>
-              <div class="timeline-photo">
-                <div class="placeholder-img placeholder-img--small" aria-label="фото 1985">
-                  <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" width="100%" height="140">
-                    <rect width="200" height="140" fill="#E8E4DA"/>
-                    <text x="100" y="75" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#999">фото 1985</text>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-body">
-                <div class="timeline-year">2005</div>
-                <p>Московский гуманитарный университет, факультет психологии. Осознала, что настоящая помощь лежит на пересечении медицины и психологии.</p>
-              </div>
-              <div class="timeline-photo">
-                <div class="placeholder-img placeholder-img--small" aria-label="фото 2005">
-                  <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" width="100%" height="140">
-                    <rect width="200" height="140" fill="#E8E4DA"/>
-                    <text x="100" y="75" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#999">фото 2005</text>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-body">
-                <div class="timeline-year">2010</div>
-                <p>Переквалификация, нейропсихология, МГУ. Углублённое изучение работы мозга после повреждений — и первые пациенты после инсульта.</p>
-              </div>
-              <div class="timeline-photo">
-                <div class="placeholder-img placeholder-img--small" aria-label="фото 2010">
-                  <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" width="100%" height="140">
-                    <rect width="200" height="140" fill="#E8E4DA"/>
-                    <text x="100" y="75" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#999">фото 2010</text>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-body">
-                <div class="timeline-year">2003–2023</div>
-                <p>20 лет практики в Москве. Сотни семей, которым удалось найти новый ритм жизни после инсульта.</p>
-              </div>
-              <div class="timeline-photo">
-                <div class="placeholder-img placeholder-img--small" aria-label="фото практика">
-                  <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" width="100%" height="140">
-                    <rect width="200" height="140" fill="#E8E4DA"/>
-                    <text x="100" y="75" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#999">фото практика</text>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-body">
-                <div class="timeline-year">2023</div>
-                <p>Переезд в Чехию, Прага. Продолжаю вести онлайн-консультации и групповые программы — расстояние больше не преграда.</p>
-              </div>
-              <div class="timeline-photo">
-                <div class="placeholder-img placeholder-img--small" aria-label="фото 2023">
-                  <svg viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg" width="100%" height="140">
-                    <rect width="200" height="140" fill="#E8E4DA"/>
-                    <text x="100" y="75" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#999">фото 2023</text>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-          </div>
+        <div class="bio-text">
+          <div class="bio-year">1985</div>
+          <h2 class="font-heading">Начало пути</h2>
+          <p>Медицинское училище. Окончила с красным дипломом — это был первый шаг к пониманию, как работает человеческое тело и разум. Уже тогда меня интересовало не только «что лечить», но и «как думает человек, который болеет».</p>
         </div>
       </div>
-    </section>
 
+      <!-- 2005 — фото справа -->
+      <div class="bio-strip bio-strip--reverse">
+        <div class="bio-photo" aria-label="фото 2005">
+          <svg viewBox="0 0 4 3" xmlns="http://www.w3.org/2000/svg"
+               preserveAspectRatio="xMidYMid slice">
+            <rect width="4" height="3" fill="#E8E4DA"/>
+            <text x="2" y="1.65" text-anchor="middle"
+                  font-family="sans-serif" font-size="0.28" fill="#999">фото 2005</text>
+          </svg>
+        </div>
+        <div class="bio-text bio-text--alt">
+          <div class="bio-year">2005</div>
+          <h2 class="font-heading">Психология</h2>
+          <p>Московский гуманитарный университет, факультет психологии. Осознала, что настоящая помощь лежит на пересечении медицины и психологии. Отучилась на отлично и поняла: нужно идти глубже — в работу с мозгом.</p>
+        </div>
+      </div>
+
+      <!-- 2010 — фото слева -->
+      <div class="bio-strip">
+        <div class="bio-photo" aria-label="фото 2010">
+          <svg viewBox="0 0 4 3" xmlns="http://www.w3.org/2000/svg"
+               preserveAspectRatio="xMidYMid slice">
+            <rect width="4" height="3" fill="#E8E4DA"/>
+            <text x="2" y="1.65" text-anchor="middle"
+                  font-family="sans-serif" font-size="0.28" fill="#999">фото 2010</text>
+          </svg>
+        </div>
+        <div class="bio-text">
+          <div class="bio-year">2010</div>
+          <h2 class="font-heading">Нейропсихология</h2>
+          <p>Переквалификация, нейропсихология, МГУ. Углублённое изучение работы мозга после повреждений. Именно здесь пришло понимание: нейропластичность — это не теория, это инструмент, который меняет жизни. Первые пациенты после инсульта — и первые победы.</p>
+        </div>
+      </div>
+
+      <!-- 2003–2023 — фото справа -->
+      <div class="bio-strip bio-strip--reverse">
+        <div class="bio-photo" aria-label="фото практика">
+          <svg viewBox="0 0 4 3" xmlns="http://www.w3.org/2000/svg"
+               preserveAspectRatio="xMidYMid slice">
+            <rect width="4" height="3" fill="#E8E4DA"/>
+            <text x="2" y="1.65" text-anchor="middle"
+                  font-family="sans-serif" font-size="0.28" fill="#999">фото практика</text>
+          </svg>
+        </div>
+        <div class="bio-text bio-text--alt">
+          <div class="bio-year">2003–2023</div>
+          <h2 class="font-heading">20 лет практики</h2>
+          <p>Частная практика в Москве. Сотни семей, которым удалось найти новый ритм жизни после инсульта. За эти годы я убедилась: самое важное в реабилитации — не скорость, а последовательность и доверие между специалистом и пациентом.</p>
+        </div>
+      </div>
+
+      <!-- 2023 — фото слева -->
+      <div class="bio-strip">
+        <div class="bio-photo" aria-label="фото Прага 2023">
+          <svg viewBox="0 0 4 3" xmlns="http://www.w3.org/2000/svg"
+               preserveAspectRatio="xMidYMid slice">
+            <rect width="4" height="3" fill="#E8E4DA"/>
+            <text x="2" y="1.65" text-anchor="middle"
+                  font-family="sans-serif" font-size="0.28" fill="#999">фото Прага 2023</text>
+          </svg>
+        </div>
+        <div class="bio-text">
+          <div class="bio-year">2023 — сейчас</div>
+          <h2 class="font-heading">Прага. Онлайн. Весь мир</h2>
+          <p>Переезд в Чехию открыл новые возможности. Онлайн-формат позволяет работать с русскоязычными клиентами из любой точки мира — из России, Европы, Израиля, США. Практика продолжается. Расстояние больше не преграда.</p>
+        </div>
+      </div>
+
+    </div><!-- /bio-strips -->
+
+    <!-- Diplomas -->
     <section class="section section-bg">
-      <h2 class="font-heading mb-8">Дипломы и сертификаты</h2>
+      <h2 class="font-heading mb-8">Образование и дипломы</h2>
       <div class="diploma-grid">
         <div class="diploma-item" aria-label="диплом 1">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="200" fill="#E8E4DA"/>
-            <text x="100" y="105" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#999">диплом 1</text>
+          <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="220" fill="#E8E4DA"/>
+            <text x="150" y="115" text-anchor="middle"
+                  font-family="sans-serif" font-size="14" fill="#999">диплом 1</text>
           </svg>
         </div>
         <div class="diploma-item" aria-label="диплом 2">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="200" fill="#E8E4DA"/>
-            <text x="100" y="105" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#999">диплом 2</text>
+          <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="220" fill="#E8E4DA"/>
+            <text x="150" y="115" text-anchor="middle"
+                  font-family="sans-serif" font-size="14" fill="#999">диплом 2</text>
           </svg>
         </div>
         <div class="diploma-item" aria-label="диплом 3">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="200" fill="#E8E4DA"/>
-            <text x="100" y="105" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#999">диплом 3</text>
+          <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="220" fill="#E8E4DA"/>
+            <text x="150" y="115" text-anchor="middle"
+                  font-family="sans-serif" font-size="14" fill="#999">диплом 3</text>
           </svg>
         </div>
         <div class="diploma-item" aria-label="диплом 4">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="200" fill="#E8E4DA"/>
-            <text x="100" y="105" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#999">диплом 4</text>
+          <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="220" fill="#E8E4DA"/>
+            <text x="150" y="115" text-anchor="middle"
+                  font-family="sans-serif" font-size="14" fill="#999">диплом 4</text>
           </svg>
         </div>
         <div class="diploma-item" aria-label="диплом 5">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="200" fill="#E8E4DA"/>
-            <text x="100" y="105" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#999">диплом 5</text>
+          <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="220" fill="#E8E4DA"/>
+            <text x="150" y="115" text-anchor="middle"
+                  font-family="sans-serif" font-size="14" fill="#999">диплом 5</text>
           </svg>
         </div>
         <div class="diploma-item" aria-label="диплом 6">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <rect width="200" height="200" fill="#E8E4DA"/>
-            <text x="100" y="105" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#999">диплом 6</text>
+          <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="220" fill="#E8E4DA"/>
+            <text x="150" y="115" text-anchor="middle"
+                  font-family="sans-serif" font-size="14" fill="#999">диплом 6</text>
           </svg>
         </div>
       </div>
     </section>
 
+    <!-- Video -->
     <section class="section">
       <h2 class="font-heading mb-8">Обо мне</h2>
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/XXXXXXXXXXXX" title="Обо мне — Людмила Смирнова" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe
+          src="https://www.youtube.com/embed/XXXXXXXXXXXX"
+          title="Обо мне — Людмила Смирнова"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -181,6 +211,14 @@
       </a>
     </p>
   </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр диплома">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Закрыть">×</button>
+      <div class="lightbox-img-container"></div>
+    </div>
+  </div>
 
   <script src="./js/main.js"></script>
 </body>
