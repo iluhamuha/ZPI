@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "4DQ9sKXHK-zgUoO-c6goB"
+uri = "file://life-after-stroke-site.zip"
+type = "unspecified"
+title = "life-after-stroke-site.zip"
