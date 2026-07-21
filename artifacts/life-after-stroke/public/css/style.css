@@ -687,6 +687,32 @@ img, svg {
   border: 1px solid var(--divider);
 }
 
+/* Benefit list (course pages) */
+.benefit-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.benefit-list li {
+  padding-left: 1.75rem;
+  position: relative;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.benefit-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--accent-sage);
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
 /* Utilities */
 .mb-2 { margin-bottom: 0.5rem; }
 .mb-4 { margin-bottom: 1rem; }
