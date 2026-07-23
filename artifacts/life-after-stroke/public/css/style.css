@@ -516,6 +516,66 @@ img, svg {
   object-fit: cover;
 }
 
+/* Education list */
+.edu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--divider);
+}
+
+.edu-item:first-child {
+  border-top: 1px solid var(--divider);
+}
+
+.edu-year {
+  font-family: var(--font-heading);
+  color: var(--accent-sage);
+  min-width: 3.5rem;
+  flex-shrink: 0;
+  font-size: 0.95rem;
+}
+
+.edu-text {
+  flex: 1;
+  line-height: 1.5;
+}
+
+.edu-thumb-wrap {
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.edu-thumb-wrap img {
+  display: block;
+  height: 90px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: opacity var(--transition);
+}
+
+.edu-thumb-wrap:hover img {
+  opacity: 0.8;
+}
+
+.edu-extra-heading {
+  margin-top: 3rem;
+  color: var(--text-muted);
+}
+
 /* Lightbox */
 .lightbox {
   position: fixed;
@@ -817,6 +877,26 @@ img, svg {
   /* Diploma grid */
   .diploma-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Education list — mobile */
+  .edu-item {
+    flex-wrap: wrap;
+  }
+
+  .edu-year {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  .edu-thumb-wrap {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .edu-thumb-wrap img {
+    height: auto;
+    width: 100%;
   }
 
   .section {

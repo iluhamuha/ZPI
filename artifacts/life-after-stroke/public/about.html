@@ -107,26 +107,75 @@
     <!-- Diplomas -->
     <section class="section section-bg">
       <h2 class="font-heading mb-8">Образование и дипломы</h2>
-      <div class="diploma-grid">
-        <div class="diploma-item" aria-label="диплом 1">
-          <img src="https://picsum.photos/seed/diploma-doc-1/400/290" alt="диплом 1">
-        </div>
-        <div class="diploma-item" aria-label="диплом 2">
-          <img src="https://picsum.photos/seed/diploma-doc-2/400/290" alt="диплом 2">
-        </div>
-        <div class="diploma-item" aria-label="диплом 3">
-          <img src="https://picsum.photos/seed/diploma-doc-3/400/290" alt="диплом 3">
-        </div>
-        <div class="diploma-item" aria-label="диплом 4">
-          <img src="https://picsum.photos/seed/diploma-doc-4/400/290" alt="диплом 4">
-        </div>
-        <div class="diploma-item" aria-label="диплом 5">
-          <img src="https://picsum.photos/seed/diploma-doc-5/400/290" alt="диплом 5">
-        </div>
-        <div class="diploma-item" aria-label="диплом 6">
-          <img src="https://picsum.photos/seed/diploma-doc-6/400/290" alt="диплом 6">
-        </div>
-      </div>
+      <ul class="edu-list">
+        <li class="edu-item">
+          <span class="edu-year">2005</span>
+          <span class="edu-text">Магистр психологии, Московский гуманитарный университет, диплом с отличием</span>
+          <button class="diploma-item edu-thumb-wrap" aria-label="Открыть диплом">
+            <img src="/img/diplomas/01-psychology-2005.jpg" alt="Магистр психологии, Московский гуманитарный университет, диплом с отличием — 2005" loading="lazy">
+          </button>
+        </li>
+        <li class="edu-item">
+          <span class="edu-year">2003</span>
+          <span class="edu-text">Телесно-ориентированные методы развития личности</span>
+          <button class="diploma-item edu-thumb-wrap" aria-label="Открыть диплом">
+            <img src="/img/diplomas/02-body-2003.jpg" alt="Телесно-ориентированные методы развития личности — 2003" loading="lazy">
+          </button>
+        </li>
+        <li class="edu-item">
+          <span class="edu-year">2004</span>
+          <span class="edu-text">Эмоционально-образная психотерапия под руководством профессора Н.&nbsp;Д.&nbsp;Линде</span>
+          <button class="diploma-item edu-thumb-wrap" aria-label="Открыть диплом">
+            <img src="/img/diplomas/03-linde-2004.jpg" alt="Эмоционально-образная психотерапия под руководством профессора Н. Д. Линде — 2004" loading="lazy">
+          </button>
+        </li>
+        <li class="edu-item">
+          <span class="edu-year">2005</span>
+          <span class="edu-text">Интегративная семейная психотерапия</span>
+          <button class="diploma-item edu-thumb-wrap" aria-label="Открыть диплом">
+            <img src="/img/diplomas/04-family-2005.jpg" alt="Интегративная семейная психотерапия — 2005" loading="lazy">
+          </button>
+        </li>
+        <li class="edu-item">
+          <span class="edu-year">2007</span>
+          <span class="edu-text">HR-менеджер современной организации</span>
+          <button class="diploma-item edu-thumb-wrap" aria-label="Открыть диплом">
+            <img src="/img/diplomas/05-hr-2007.jpg" alt="HR-менеджер современной организации — 2007" loading="lazy">
+          </button>
+        </li>
+        <li class="edu-item">
+          <span class="edu-year">2021</span>
+          <span class="edu-text">Нейропсихология, МГУ имени М.&nbsp;В.&nbsp;Ломоносова</span>
+          <button class="diploma-item edu-thumb-wrap" aria-label="Открыть диплом">
+            <img src="/img/diplomas/06-neuro-msu-2021.jpg" alt="Нейропсихология, МГУ имени М. В. Ломоносова — 2021" loading="lazy">
+          </button>
+        </li>
+        <li class="edu-item">
+          <span class="edu-year">2026</span>
+          <span class="edu-text">Нейропсихология взрослых. Нейропсихологическая реабилитация при поражениях головного мозга, АНО ДПО «Уральский институт повышения квалификации и переподготовки (УрИПКиП)», программа повышения квалификации, 72&nbsp;часа</span>
+          <button class="diploma-item edu-thumb-wrap" aria-label="Открыть диплом">
+            <img src="/img/diplomas/07-uripkip-2026.jpg" alt="Нейропсихологическая реабилитация при поражениях головного мозга, УрИПКиП — 2026" loading="lazy">
+          </button>
+        </li>
+        <li class="edu-item">
+          <span class="edu-year">2005—</span>
+          <span class="edu-text">Ежегодная профессиональная сертификация и супервизия — с 2005 года</span>
+        </li>
+      </ul>
+
+      <!-- ===== ДОПОЛНИТЕЛЬНАЯ КВАЛИФИКАЦИЯ — ДОБАВЛЯТЬ ПУНКТЫ СЮДА ===== -->
+      <!--
+      <h3 class="font-heading edu-extra-heading">Дополнительная квалификация</h3>
+      <ul class="edu-list">
+        <li class="edu-item">
+          <span class="edu-year">2024</span>
+          <span class="edu-text">Название программы</span>
+          <button class="diploma-item edu-thumb-wrap" aria-label="Открыть диплом">
+            <img src="/img/diplomas/extra-01.jpg" alt="Название программы — 2024" loading="lazy">
+          </button>
+        </li>
+      </ul>
+      -->
     </section>
 
     <!-- Video -->
@@ -154,14 +203,6 @@
       </a>
     </p>
   </footer>
-
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр диплома">
-    <div class="lightbox-content">
-      <button class="lightbox-close" aria-label="Закрыть">×</button>
-      <div class="lightbox-img-container"></div>
-    </div>
-  </div>
 
   <script src="./js/main.js"></script>
 </body>

@@ -117,12 +117,20 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.diploma-item, .gallery-item').forEach(item => {
     item.addEventListener('click', () => {
       const svg = item.querySelector('svg');
+      const img = item.querySelector('img');
       if (svg) {
         lightboxImgContainer.innerHTML = '';
         const clone = svg.cloneNode(true);
         // Remove fixed width/height for responsive display in lightbox
         clone.removeAttribute('width');
         clone.removeAttribute('height');
+        clone.style.width = '100%';
+        clone.style.height = 'auto';
+        lightboxImgContainer.appendChild(clone);
+        lightbox.classList.add('open');
+      } else if (img) {
+        lightboxImgContainer.innerHTML = '';
+        const clone = img.cloneNode(true);
         clone.style.width = '100%';
         clone.style.height = 'auto';
         lightboxImgContainer.appendChild(clone);
