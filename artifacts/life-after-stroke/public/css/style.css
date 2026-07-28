@@ -578,6 +578,45 @@ img, svg {
 .home-nav-btn--gold  { background-color: #B5924C; }
 .home-nav-btn--rose  { background-color: #A96D7C; }
 
+/* Collapsible text */
+.text-toggle-btn {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--accent-sage);
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--accent-sage);
+  border-radius: 6px;
+  user-select: none;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.text-toggle-btn::-webkit-details-marker {
+  display: none;
+}
+
+.text-toggle-btn:hover {
+  background-color: var(--accent-sage);
+  color: #FFFFFF;
+}
+
+.text-toggle-btn::before {
+  content: 'Читать текст ▾';
+}
+
+.text-toggle[open] .text-toggle-btn::before {
+  content: 'Свернуть текст ▴';
+}
+
+.text-toggle-content {
+  margin-top: 1.5rem;
+}
+
 /* Education list */
 .edu-list {
   list-style: none;
