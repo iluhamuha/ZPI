@@ -517,17 +517,25 @@ img, svg {
 }
 
 /* Home navigation buttons */
+.hero-compact {
+  padding: 4rem 2rem 2.5rem;
+}
+
+.home-nav-section {
+  padding-top: 1rem;
+}
+
 .home-nav {
-  max-width: 900px;
+  max-width: 980px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
 .home-nav-row {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
 .home-nav-row-2 {
@@ -543,24 +551,32 @@ img, svg {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 120px;
-  padding: 1.5rem;
-  background-color: var(--bg-white);
-  border: 1px solid var(--divider);
-  border-radius: 8px;
+  min-height: 180px;
+  padding: 2rem 1.5rem;
+  border: none;
+  border-radius: 14px;
   font-family: var(--font-heading);
-  font-size: 1.05rem;
-  line-height: 1.4;
-  color: var(--text-main);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: #FFFFFF;
   text-decoration: none;
-  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  box-shadow: 0 4px 14px rgba(28, 26, 23, 0.12);
+  transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
 }
 
 .home-nav-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(28, 26, 23, 0.08);
-  border-color: var(--accent-sage);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(28, 26, 23, 0.18);
+  filter: brightness(1.06);
+  color: #FFFFFF;
 }
+
+.home-nav-btn--sage  { background-color: #6F8F72; }
+.home-nav-btn--blue  { background-color: #5E7F9B; }
+.home-nav-btn--terra { background-color: #C07856; }
+.home-nav-btn--gold  { background-color: #B5924C; }
+.home-nav-btn--rose  { background-color: #A96D7C; }
 
 /* Education list */
 .edu-list {
