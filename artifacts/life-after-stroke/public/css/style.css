@@ -516,6 +516,52 @@ img, svg {
   object-fit: cover;
 }
 
+/* Home navigation buttons */
+.home-nav {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home-nav-row {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.home-nav-row-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.home-nav-row-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.home-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 120px;
+  padding: 1.5rem;
+  background-color: var(--bg-white);
+  border: 1px solid var(--divider);
+  border-radius: 8px;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: var(--text-main);
+  text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.home-nav-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(28, 26, 23, 0.08);
+  border-color: var(--accent-sage);
+}
+
 /* Education list */
 .edu-list {
   list-style: none;
@@ -879,6 +925,16 @@ img, svg {
   /* Diploma grid */
   .diploma-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Home navigation — mobile */
+  .home-nav-row-2,
+  .home-nav-row-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .home-nav-btn {
+    min-height: 80px;
   }
 
   /* Education list — mobile */
