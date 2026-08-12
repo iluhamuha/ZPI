@@ -67,7 +67,7 @@ app.post('/api/apply', async (req, res) => {
     return res.status(429).json({ error: 'Слишком много запросов. Пожалуйста, попробуйте позже.' });
   }
 
-  const { name, email, course, honeypot } = req.body;
+  const { name, email, message, course, honeypot } = req.body;
 
   // Honeypot anti-spam: bots fill hidden fields, humans don't
   if (honeypot) {
@@ -88,6 +88,7 @@ app.post('/api/apply', async (req, res) => {
     `Курс: ${course || '—'}`,
     `Имя: ${name.trim()}`,
     `Email: ${email.trim()}`,
+    `Сообщение: ${message.trim()}`,
     `Дата: ${date}`,
   ].join('\n');
 
