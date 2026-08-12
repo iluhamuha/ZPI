@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = {
         name: formData.get('name'),
         email: formData.get('email'),
+        message: formData.get('message'),
         course: formData.get('course')
       };
       
